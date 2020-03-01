@@ -5,7 +5,7 @@ def find_element_index(array, value_to_find)
       return idx
     end
   end
-  return nil
+  return false
 end
 
 def find_max_value(array)
