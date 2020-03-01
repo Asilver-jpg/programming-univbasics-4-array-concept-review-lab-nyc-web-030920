@@ -20,5 +20,11 @@ def find_max_value(array)
 end
 
 def find_min_value(array)
-  min_value = float::INFINITY
+  min_value = Float::INFINITY
+  array.each_with_index do |ele, idx|
+  if array[idx] < min_value
+    min_value=array[idx]
+  end
+  end
+  return min_value
 end
