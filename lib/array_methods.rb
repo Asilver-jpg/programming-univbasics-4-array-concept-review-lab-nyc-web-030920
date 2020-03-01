@@ -2,8 +2,7 @@ def find_element_index(array, value_to_find)
   # Add your solution here
   array.each_with_index do |ele, idx|
     puts array[idx]
-    if array[idx] == ele 
-     
+    if ele == value_to_find
       return idx
     end
   end
@@ -13,8 +12,8 @@ end
 def find_max_value(array)
   max_value= 0 
   array.each_with_index do |ele,idx|
-    if array[idx] > max_value
-      max_value= array[idx]
+    if ele > max_value
+      max_value= ele
     end
   end
   return max_value
@@ -24,8 +23,8 @@ end
 def find_min_value(array)
   min_value = Float::INFINITY
   array.each_with_index do |ele, idx|
-  if array[idx] < min_value
-    min_value=array[idx]
+  if ele < min_value
+    min_value=ele
   end
   end
   return min_value
